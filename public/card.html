@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#13284f" />
+  <title>ScamShield Kakis — Demo & Sources</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+  <style>
+    :root { --navy:#13284f; --navy2:#1f4282; --teal:#159f90; --teal-l:#cff5ee; --sun:#ffbf4a; --bg:#f4f7fb; --ink:#0d1d3a; --muted:#2c55a0; }
+    * { box-sizing: border-box; }
+    html { font-size: 112.5%; -webkit-text-size-adjust: 100%; }
+    body { margin: 0; min-height: 100vh; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; color: var(--ink);
+      background: linear-gradient(180deg, var(--navy) 0, var(--navy) 46%, var(--bg) 46%); }
+    main { max-width: 30rem; margin: 0 auto; padding: 2.2rem 1.1rem 2rem; }
+    .hero { text-align: center; color: #fff; }
+    .hero img { width: 4.2rem; height: 4.2rem; }
+    h1 { margin: .5rem 0 .2rem; font-size: 2.3rem; line-height: 1.05; letter-spacing: .01em; font-weight: 900; }
+    .tag { margin: 0; color: #d9e3f5; font-size: 1.05rem; }
+    .group { display: inline-block; margin-top: .8rem; padding: .3rem .9rem; border-radius: 999px; background: rgba(255,255,255,.12); font-weight: 700; font-size: .9rem; }
+    .choices { display: grid; gap: 1rem; margin-top: 1.8rem; }
+    a.choice { display: flex; align-items: center; gap: 1rem; padding: 1.25rem 1.2rem; border-radius: 1.6rem; text-decoration: none; color: var(--ink);
+      background: #fff; box-shadow: 0 8px 30px rgba(13,29,58,.16); min-height: 6.5rem; transition: transform .12s ease; }
+    a.choice:active { transform: scale(.98); }
+    a.choice:focus-visible { outline: 4px solid var(--sun); outline-offset: 3px; }
+    .icon { flex: none; width: 3.6rem; height: 3.6rem; border-radius: 1.1rem; display: grid; place-items: center; }
+    .demo .icon { background: var(--sun); }
+    .docs .icon { background: var(--teal-l); }
+    .title { display: block; font-size: 1.35rem; font-weight: 800; }
+    .desc { display: block; margin-top: .15rem; color: var(--muted); font-size: 1rem; line-height: 1.35; }
+    .arrow { margin-left: auto; flex: none; color: #7f9fd6; font-size: 1.6rem; }
+    .demo { border: 3px solid var(--sun); }
+    .note { margin: 1.6rem .3rem 0; text-align: center; color: #2c55a0; font-size: .95rem; line-height: 1.45; }
+    .help { margin: 1rem 0 0; padding: .9rem 1rem; border-radius: 1.2rem; background: #fff; text-align: center; font-size: .95rem; color: var(--ink); }
+    .help strong { color: var(--navy); }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="hero">
+      <img src="./favicon.svg" alt="" />
+      <h1>ScamShield Kakis</h1>
+      <p class="tag">Stay Sharp. Stay Safe. Learn Together.</p>
+      <span class="group">Tutorial Group T047 · C27</span>
+    </header>
+
+    <nav class="choices" aria-label="Choose where to go">
+      <a class="choice demo" href="./#/">
+        <span class="icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#13284f" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>
+        </span>
+        <span>
+          <span class="title">Try the Demo</span>
+          <span class="desc">Interactive app — works on your phone, no sign-up</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+
+      <a class="choice docs" href="./sources.html">
+        <span class="icon" aria-hidden="true">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#0e8076" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h5"/></svg>
+        </span>
+        <span>
+          <span class="title">Sources &amp; References</span>
+          <span class="desc">The research behind our poster [1]–[6]</span>
+        </span>
+        <span class="arrow" aria-hidden="true">›</span>
+      </a>
+    </nav>
+
+    <p class="note">University innovation project demo. All scam examples in the app are fictional simulations.</p>
+    <p class="help">Real scam worry? Call the <strong>ScamShield Helpline 1799</strong> (24/7).</p>
+  </main>
+</body>
+</html>
