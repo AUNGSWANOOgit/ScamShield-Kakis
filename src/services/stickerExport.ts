@@ -34,7 +34,7 @@ export async function stickerPngBlob(sticker: StickerDef, size = 1024, watermark
   }
 }
 
-export const stickerFileName = (s: StickerDef) => `${s.id}-safeseniors-sticker.png`;
+export const stickerFileName = (s: StickerDef) => `${s.id}-scamshield-kakis-sticker.png`;
 
 export async function downloadSticker(sticker: StickerDef, watermark?: string): Promise<void> {
   const blob = await prepareStickerFile(sticker, watermark);

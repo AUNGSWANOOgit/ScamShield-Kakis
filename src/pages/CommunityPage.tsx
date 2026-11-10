@@ -128,7 +128,7 @@ function JoinedView({ onSwitch }: { onSwitch: () => void }) {
     { name: `${state.profile?.nickname ?? 'You'} (you)`, avatarId: state.profile?.avatarId ?? 'auntie', weeklyPoints: myWeek, role: undefined, isMe: true },
   ].sort((a, b) => b.weeklyPoints - a.weeklyPoints);
 
-  const inviteMessage = `Hi! Join me on SafeSeniors SG to learn how to spot scams and deepfakes together. Use my invite code ${code} to join ${group.name}! (Demo)`;
+  const inviteMessage = `Hi! Join me on ScamShield Kakis to learn how to spot scams and deepfakes together. Use my invite code ${code} to join ${group.name}! (Demo)`;
 
   return (
     <>

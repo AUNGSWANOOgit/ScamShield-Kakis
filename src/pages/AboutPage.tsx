@@ -37,7 +37,7 @@ export function AboutPage({ standalone = false }: { standalone?: boolean }) {
           <ChevronLeft /> {t('common.back')}
         </button>
       )}
-      <PageHeader title={t('nav.about')} subtitle="Community-Based Deepfake Awareness Platform for Seniors — university innovation project demo." icon={<Info />} />
+      <PageHeader title={t('nav.about')} subtitle="ScamShield Kakis — a Community-Based Deepfake Awareness Platform for Seniors (university innovation project demo)." icon={<Info />} />
 
       <blockquote className="card border-l-8 border-sun-400 text-xl font-semibold leading-relaxed text-navy-800">
         &ldquo;Our platform combines repeated learning, community participation and meaningful digital rewards to encourage sustained engagement with
@@ -101,7 +101,8 @@ export function AboutPage({ standalone = false }: { standalone?: boolean }) {
       </section>
 
       <p className="mt-5 text-center text-sm text-navy-600">
-        No accounts, servers, external APIs or tracking. All progress is stored only in this browser (localStorage). All people, groups and
+        ScamShield Kakis is an independent student project and is not affiliated with or endorsed by the official ScamShield service or the
+        Singapore Government. No accounts, servers, external APIs or tracking. All progress is stored only in this browser (localStorage). All people, groups and
         messages are fictional.
       </p>
     </div>

@@ -293,7 +293,7 @@ export function stickerSvg(sticker: StickerDef, opts: StickerSvgOptions = {}): s
   const wishSize = Math.min(44, Math.floor(470 / d.zhWish.replace(/\s/g, '').length / 1.08));
   const blessSize = Math.min(52, Math.floor(480 / (d.blessing.length * 0.52)));
   const shadow = `filter="url(#${sid}-shadow)"`;
-  const watermark = opts.watermark ?? 'SafeSeniors SG';
+  const watermark = opts.watermark ?? 'ScamShield Kakis';
 
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="${size}" height="${size}" role="img" aria-label="${esc(sticker.name)} greeting sticker">
 <defs>

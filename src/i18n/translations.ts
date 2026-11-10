@@ -4,7 +4,7 @@
  * Learning content (lessons/scenarios) is English-only in this demo; missing keys fall back to English.
  */
 const en = {
-  'app.name': 'SafeSeniors SG',
+  'app.name': 'ScamShield Kakis',
   'app.tagline': 'Stay Sharp. Stay Safe. Learn Together.',
 
   'nav.home': 'Home',
@@ -45,7 +45,7 @@ const en = {
   'welcome.earn': 'Earn Rewards',
   'welcome.earnDesc': 'Collect greeting stickers to share with family.',
   'welcome.intro': 'A friendly, community-based way to practise online safety — together with your neighbours.',
-  'welcome.disclaimer': 'University innovation project demo. All examples are fictional simulations.',
+  'welcome.disclaimer': 'University innovation project demo — an independent student project, not an official government service. All examples are fictional simulations.',
 
   'onboard.title': 'Welcome! What should we call you?',
   'onboard.nickname': 'Your nickname',
@@ -169,7 +169,7 @@ const en = {
 export type TranslationKey = keyof typeof en;
 
 const zh: Partial<Record<TranslationKey, string>> = {
-  'app.name': '乐龄防骗通',
+  'app.name': 'ScamShield Kakis',
   'app.tagline': '保持警觉，保持安全，一起学习。',
 
   'nav.home': '首页',
@@ -210,7 +210,7 @@ const zh: Partial<Record<TranslationKey, string>> = {
   'welcome.earn': '赢取奖励',
   'welcome.earnDesc': '收集问候贴图，分享给家人朋友。',
   'welcome.intro': '一个友善的社区平台，和邻居们一起练习网络安全。',
-  'welcome.disclaimer': '大学创新项目演示。所有例子均为虚构模拟。',
+  'welcome.disclaimer': '大学创新项目演示——独立学生项目，并非官方政府服务。所有例子均为虚构模拟。',
 
   'onboard.title': '欢迎！我们该怎么称呼您？',
   'onboard.nickname': '您的昵称',

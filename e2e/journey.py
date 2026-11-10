@@ -1,5 +1,5 @@
 """
-End-to-end acceptance test for the SafeSeniors SG demo (Playwright, Python).
+End-to-end acceptance test for the ScamShield Kakis demo (Playwright, Python).
 
 Runs the main user journeys on emulated PHONES (touch, mobile UA) and a laptop,
 against the built site served from a GitHub-Pages-style sub-path.
@@ -238,7 +238,7 @@ def new_user_journey(browser, device_name: str, ctx_opts: dict):
     page.get_by_test_id("reset-demo").click()
     page.get_by_role("dialog").get_by_role("button", name=re.compile("Reset|重置")).click()
     expect(page.get_by_test_id("start-learning")).to_be_visible()
-    stored = page.evaluate("localStorage.getItem('safeseniors-sg-demo-v1')")
+    stored = page.evaluate("localStorage.getItem('scamshield-kakis-demo-v1')")
     check(f"{tag} reset returns to welcome with clean state", stored is None or '"profile":null' in stored)
     ctx.close()
 
