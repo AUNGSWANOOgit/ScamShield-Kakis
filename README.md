@@ -82,52 +82,6 @@ To try it on your own phone during development, run `npm run dev -- --host` and 
 
 ---
 
-## Deploy to GitHub Pages
-
-The project is already configured:
-- `vite.config.ts` uses a **relative base (`./`)**, so assets load from any repository sub-path (`https://<user>.github.io/<repo>/`) without editing anything.
-- **HashRouter** (`/#/home`) means refreshing any page never returns a 404 on static hosting.
-- `.github/workflows/deploy.yml` installs, tests, builds and deploys automatically on every push to `main`.
-
-### Steps
-1. Create a new repository on GitHub (public, or private on a plan that supports Pages).
-2. Push this folder:
-   ```bash
-   git init
-   git add .
-   git commit -m "ScamShield Kakis demo"
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/<repo-name>.git
-   git push -u origin main
-   ```
-3. On GitHub open **Settings → Pages**. Under **Build and deployment → Source**, choose **GitHub Actions**.
-4. Open the **Actions** tab. The "Deploy to GitHub Pages" workflow runs (re-run it if it started before step 3). When it is green, your site is live at
-   `https://<your-username>.github.io/<repo-name>/`.
-
-No secrets or environment variables are needed. Optional: to force an absolute base path, build with `VITE_BASE=/<repo-name>/ npm run build`.
-
----
-
-## Using Guided Demo Mode (for presentations)
-
-1. Open the site and tap **Presentation Demo** (welcome screen, top bar, or Profile → Presenter tools).
-   This loads the fresh "Auntie Mary" profile: 70 points, Lesson 1 done, Tampines group joined, *Good Morning Monday* still locked.
-2. Follow the panel (bottom-right on laptops, one-line bar on phones — tap ▲ for details). You do every tap yourself; steps tick off automatically:
-   1. **Open the dashboard** — greeting, points, streak, today's challenge.
-   2. **Complete a short lesson** — Learn → Lesson 2 → 4 cards → 3-question quiz. *(+50 → 120 pts, unlocks Rising Star)*
-   3. **Answer an Identify question** — e.g. the "grandson" voice note → "Looks suspicious" → "Call Wei Jie on his OLD saved number".
-   4. **Earn points** — shown in the toast and top bar.
-   5. **Unlock Good Morning Monday** — lesson + Identify answer today completes the daily challenge. *(160 pts)*
-   6. **Download or share the sticker** — Rewards → sticker → Share (phone) / Download PNG (laptop).
-   7. **View community progress** — Tampines group total moves to 1,940 / 2,000.
-3. Use **Go there** to jump to the right screen and **Why this matters** for talking points. **Restart** reloads fresh demo data.
-
-Presenter extras (Profile → Presenter tools): **Simulate next day** to show daily resets and the next greeting sticker; Report page has "Simulate next review step".
-
-**Reset:** Profile → Reset Demo clears everything on that device.
-
----
-
 ## Project structure
 
 ```
